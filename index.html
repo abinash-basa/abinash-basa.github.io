@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Abinash Basa — Product Manager, Math &amp; AI</title>
+  <meta name="description" content="Abinash Basa — Aspiring Product Manager working at the intersection of mathematics and AI. M.Sc. Mathematics, MBA in Generative AI and Product Management.">
+  <meta name="keywords" content="Abinash Basa, Product Manager, Mathematics, AI, Generative AI, IIT Patna, LPU">
+  <meta name="author" content="Abinash Basa">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Abinash Basa — Product Manager, Math & AI">
+  <meta property="og:description" content="Aspiring Product Manager working at the intersection of mathematics and AI.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;1,14..32,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════
+       Navigation
+       ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">AB</a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:.5rem;">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+        <div class="nav-hamburger" id="navHamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         Hero
+         ═══════════════════════════════════════ -->
+    <section id="hero" class="hero">
+      <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-content">
+        <h1 class="hero-name reveal">Abinash Basa</h1>
+        <p class="hero-identity reveal">
+          Aspiring Product Manager working at the intersection of math and AI.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+          <!-- ✏️ Resume link — opens in a new tab -->
+          <a href="resume.pdf" class="btn btn-resume" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-divider"></div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         About
+         ═══════════════════════════════════════ -->
+    <section id="about" class="section">
+      <div class="section-inner">
+        <span class="section-marker reveal">λ</span>
+        <h2 class="section-title reveal">About</h2>
+
+        <div class="about-content reveal">
+          <!-- ✏️  Edit these paragraphs to update your bio -->
+          <p>
+            I'm Abinash Basa, based in Baripada, Odisha, India.
+            I'm pursuing an M.Sc. in Mathematics at Lovely Professional University
+            and an MBA in Generative AI and Product Management at IIT Patna,
+            building a foundation that sits squarely at the intersection of
+            rigorous thinking and real-world product building.
+          </p>
+          <p>
+            My interests converge around AI, mathematics, and the craft of
+            building things that work. I think the best product managers are
+            translators, people who can move fluently between technical depth
+            and user needs. That's what I'm training to become.
+          </p>
+          <p>
+            I write daily on
+            <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener">Substack</a>,
+            sharing what I'm learning about AI, math, and building in public.
+            I believe in learning out loud and showing the work, not just the
+            results.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         Projects
+         (Cards rendered dynamically from config.js)
+         ═══════════════════════════════════════ -->
+    <section id="projects" class="section">
+      <div class="section-inner wide">
+        <span class="section-marker reveal">Σ</span>
+        <h2 class="section-title reveal">Projects</h2>
+        <p class="section-subtitle reveal">Things I'm building and thinking about.</p>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Populated by script.js from config.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         Writing
+         ═══════════════════════════════════════ -->
+    <section id="writing" class="section">
+      <div class="section-inner">
+        <span class="section-marker reveal">∂</span>
+        <h2 class="section-title reveal">Writing</h2>
+
+        <div class="writing-content reveal">
+          <p class="writing-blurb">Sharing what I learn along the way.</p>
+          <p>
+            I write daily on Substack about AI, mathematics, and building in
+            public. Each post is a small step in figuring things out. Not
+            polished essays, but honest thinking.
+          </p>
+          <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener" class="writing-link">
+            <span class="writing-link-icon">✦</span>
+            Read on Substack
+            <span class="writing-link-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         Contact
+         (Links rendered dynamically from config.js)
+         ═══════════════════════════════════════ -->
+    <section id="contact" class="section">
+      <div class="section-inner">
+        <span class="section-marker reveal">→</span>
+        <h2 class="section-title reveal">Contact</h2>
+        <p class="contact-text reveal">
+          Want to talk about product, math, or AI? I'd like that.
+        </p>
+
+        <div class="contact-links reveal" id="contactLinks">
+          <!-- Populated by script.js from config.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════
+       Footer
+       ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <p>&copy; 2026 Abinash Basa</p>
+  </footer>
+
+
+  <!-- Scripts (config first, then app logic) -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
