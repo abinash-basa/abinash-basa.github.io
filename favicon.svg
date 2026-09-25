@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="7" fill="#1C1C1C"/>
-  <text x="16" y="21.5" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#FAFAF7" text-anchor="middle" letter-spacing="-0.5">AB</text>
+  <rect width="32" height="32" rx="7" fill="#0A0B0E"/>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="6.5" fill="none" stroke="#E0845E" stroke-opacity="0.4"/>
+  <circle cx="26" cy="6" r="1.5" fill="#E0845E"/>
+  <text x="16" y="21.5" font-family="'Instrument Serif', Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#F0F2F5" text-anchor="middle" letter-spacing="-0.5">AB</text>
 </svg>

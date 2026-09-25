@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>About — Abinash Basa</title>
+  <meta name="title" content="About — Abinash Basa">
+  <meta name="description" content="Learn about Abinash Basa's background in Mathematics, Generative AI, and Product Management at IIT Patna & Lovely Professional University.">
+  <meta name="author" content="Abinash Basa">
+  <link rel="canonical" href="https://abinash-basa.github.io/about.html">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abinash-basa.github.io/about.html">
+  <meta property="og:title" content="About — Abinash Basa">
+  <meta property="og:description" content="Learn about Abinash Basa's background in Mathematics, Generative AI, and Product Management at IIT Patna & Lovely Professional University.">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://abinash-basa.github.io/about.html">
+  <meta property="twitter:title" content="About — Abinash Basa">
+  <meta property="twitter:description" content="Learn about Abinash Basa's background in Mathematics, Generative AI, and Product Management at IIT Patna & Lovely Professional University.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
+
+  <!-- Universal Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .about-hero {
+      padding: 8.5rem 0 4rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .about-story-section {
+      padding: 5rem 0;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .about-prose p {
+      color: var(--text-secondary);
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      margin-bottom: 1.75rem;
+    }
+    .about-highlight-box {
+      padding: 2.25rem;
+      border-radius: 12px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+    .about-highlight-box h3 {
+      font-family: var(--font-serif);
+      font-size: 1.65rem;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+    .about-highlight-box p {
+      color: var(--text-secondary);
+      font-size: 0.9375rem;
+      line-height: 1.65;
+      margin-bottom: 0;
+    }
+    .education-card {
+      padding: 1.5rem;
+      border-radius: 8px;
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border);
+      margin-bottom: 1rem;
+    }
+    .education-degree {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+    .education-inst {
+      font-size: 0.9375rem;
+      color: var(--accent);
+    }
+    .education-year {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+    }
+    @media (max-width: 860px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+  </style>
+</head>
+<body data-page="about">
+  <canvas id="cosmicCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-nav" id="siteNav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Abinash Basa Home">
+        <span class="brand-monogram">AB</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu" id="navMenu" aria-hidden="true">
+          <li><a href="index.html" class="nav-link ">Home</a></li>
+          <li><a href="about.html" class="nav-link is-active">About</a></li>
+          <li><a href="projects.html" class="nav-link ">Projects</a></li>
+          <li><a href="writing.html" class="nav-link ">Writing</a></li>
+          <li><a href="resume.html" class="nav-link ">Resume</a></li>
+          <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <header class="about-hero">
+      <div class="container">
+        <span class="section-eyebrow reveal">Background &amp; Philosophy</span>
+        <h1 class="section-heading reveal">About Me</h1>
+        <p class="section-lead reveal">
+          Exploring the synergy between analytical mathematics, artificial intelligence, and strategic product execution.
+        </p>
+      </div>
+    </header>
+
+    <section class="about-story-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-prose reveal">
+            <h2 style="font-family: var(--font-serif); font-size: 2.25rem; margin-bottom: 1.5rem; color: var(--text);">
+              Translating Complexity Into Value
+            </h2>
+            <p>
+              I am based in Baripada, Odisha, India. My academic and professional journey is shaped by a central belief: the most impactful modern product managers are translators who operate fluently across technical depth, mathematical reasoning, and human user experience.
+            </p>
+            <p>
+              Currently, I am pursuing an <strong>MBA in Product Management &amp; Generative AI at IIT Patna (2026–2028)</strong>, having completed my <strong>M.Sc. in Mathematics at Lovely Professional University (2024–2026)</strong> and my <strong>B.Sc. in Mathematics from MPC Autonomous College (2021–2024)</strong>.
+            </p>
+            <p>
+              Through my work at <strong>Basa Academies Universal Private Limited</strong>, I direct business operations, institutional partnerships, and digital learning programs—leading initiatives that include a 5-school government pilot and AI productivity workshops for over 50 government officials at a District Collector's Office.
+            </p>
+            <p>
+              I believe in learning out loud. Every single day, I write on Substack about mathematics, AI, and building in public—breaking down complex concepts and sharing honest reflections from real product work.
+            </p>
+
+            <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="projects.html" class="btn btn-primary">Explore My Projects</a>
+              <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <!-- Academic Highlights -->
+            <div class="about-highlight-box">
+              <h3>Academic Background</h3>
+              <div class="education-card">
+                <div class="education-degree">MBA, Product Management &amp; Generative AI</div>
+                <div class="education-inst">Indian Institute of Technology (IIT) Patna</div>
+                <div class="education-year">2026 – 2028</div>
+              </div>
+              <div class="education-card">
+                <div class="education-degree">M.Sc. in Mathematics</div>
+                <div class="education-inst">Lovely Professional University (LPU)</div>
+                <div class="education-year">2024 – 2026</div>
+              </div>
+              <div class="education-card">
+                <div class="education-degree">B.Sc. in Mathematics</div>
+                <div class="education-inst">MPC Autonomous College, Baripada</div>
+                <div class="education-year">2021 – 2024</div>
+              </div>
+            </div>
+
+            <!-- Core Pillars -->
+            <div class="about-highlight-box">
+              <h3>Operating Principles</h3>
+              <p style="margin-bottom: 1rem;">
+                <strong>1. Mathematical Grounding:</strong> Rigorous abstraction, probability, optimization, and structural logic.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                <strong>2. Data-Driven Clarity:</strong> Using hypothesis testing, metrics, and machine learning to inform decisions.
+              </p>
+              <p>
+                <strong>3. Purposeful Execution:</strong> Delivering digital workflows and products that solve genuine stakeholder problems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Abinash Basa</h3>
+          <p>Product Management × Mathematics × AI. Building disciplined, data-driven systems at the intersection of technical depth and human needs.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <span class="footer-links-title">Connect &amp; Follow</span>
+          <div class="footer-social-row">
+            <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="4" x2="20" y2="4"/><line x1="4" y1="9" x2="20" y2="9"/><path d="M4 14l8 6 8-6"/></svg>
+              Substack
+            </a>
+            <a href="https://www.linkedin.com/in/theabinashbasa" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/abinash-basa" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="mailto:abinashbasa15@gmail.com" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg>
+              Email
+            </a>
+            <a href="https://x.com/AbinashBasa1" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+              X
+            </a>
+            <a href="https://www.youtube.com/@ventbyakb" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="4"/><polygon points="10,8 16,12 10,16"/></svg>
+              YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Abinash Basa. All rights reserved.</p>
+        <p>Built with semantic precision &amp; cosmic aesthetics.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/cosmic-background.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

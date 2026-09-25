@@ -1,0 +1,245 @@
+/* ==========================================================================
+   Project Detail / Case Study Styles — Abinash Basa Portfolio
+   ========================================================================== */
+
+.case-hero {
+  padding: 8.5rem 0 4rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.case-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.case-breadcrumb a {
+  color: var(--text-secondary);
+}
+
+.case-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5.5vw, 4.25rem);
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+
+.case-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 65ch;
+  margin-bottom: 2.5rem;
+}
+
+/* Metadata Grid */
+.case-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 1.75rem 2rem;
+  border-radius: 10px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+.case-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.case-meta-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.case-meta-value {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* Case Study Content Layout */
+.case-body {
+  padding: 5rem 0;
+}
+
+.case-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.case-sidebar {
+  position: sticky;
+  top: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.case-sidebar-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.case-nav-link {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  padding: 0.35rem 0.75rem;
+  border-left: 2px solid var(--border);
+  transition: all var(--duration) var(--ease);
+}
+
+.case-nav-link:hover {
+  color: var(--accent);
+  border-left-color: var(--accent);
+}
+
+.case-content {
+  max-width: 720px;
+}
+
+.case-section {
+  margin-bottom: 4.5rem;
+}
+
+.case-section-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.case-content p {
+  color: var(--text-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.case-content ul {
+  margin: 1rem 0 1.5rem 1.25rem;
+  color: var(--text-secondary);
+}
+
+.case-content li {
+  margin-bottom: 0.75rem;
+  line-height: 1.65;
+}
+
+.case-callout {
+  padding: 1.75rem 2rem;
+  border-radius: 10px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  margin: 2rem 0;
+}
+
+.case-callout h4 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.case-callout p {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+/* Stats Metric Grid */
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.metric-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.metric-number {
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.metric-label {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+/* Document / PDF Action Banner */
+.doc-action-box {
+  padding: 2.5rem;
+  border-radius: 12px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.doc-action-info h4 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.doc-action-info p {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+/* Case Study Navigation Footer */
+.case-footer-nav {
+  padding: 3rem 0;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 860px) {
+  .case-layout {
+    grid-template-columns: 1fr;
+  }
+  .case-sidebar {
+    display: none;
+  }
+}

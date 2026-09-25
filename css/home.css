@@ -1,0 +1,235 @@
+/* ==========================================================================
+   Homepage Specific Styles — Abinash Basa Portfolio
+   ========================================================================== */
+
+/* --- Hero Section --- */
+.hero-section {
+  position: relative;
+  min-height: calc(100vh - 5rem);
+  min-height: calc(100dvh - 5rem);
+  display: flex;
+  align-items: center;
+  padding: 8rem 0 5rem;
+}
+
+.hero-content {
+  max-width: 780px;
+}
+
+.hero-name {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 7vw, 5.25rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+}
+
+.hero-positioning {
+  font-size: clamp(1.125rem, 2.2vw, 1.4rem);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hero-positioning span.dot {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.hero-statement {
+  font-size: 1.1875rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 58ch;
+  margin-bottom: 2.25rem;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* --- Selected Work Section --- */
+.home-section {
+  padding: 6rem 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.section-header-flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.featured-card {
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+.featured-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.875rem;
+}
+
+.featured-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+
+.featured-card-desc {
+  color: var(--text-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+  max-width: 68ch;
+}
+
+.featured-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  font-size: 0.8125rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 4px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+.featured-card-action {
+  display: flex;
+  align-items: center;
+}
+
+/* --- Writing Spotlight --- */
+.writing-spotlight-box {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.writing-spotlight-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.writing-spotlight-desc {
+  color: var(--text-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.writing-topics-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.writing-topic-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--text);
+  padding: 0.65rem 1rem;
+  border-radius: 6px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border);
+}
+
+.writing-topic-icon {
+  color: var(--accent);
+}
+
+/* --- About Teaser --- */
+.about-teaser-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.about-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  color: var(--text);
+  line-height: 1.45;
+  border-left: 2px solid var(--accent);
+  padding-left: 1.5rem;
+}
+
+.about-teaser-body p {
+  color: var(--text-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .featured-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .writing-spotlight-box {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .about-teaser-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .featured-card {
+    padding: 1.5rem;
+  }
+}

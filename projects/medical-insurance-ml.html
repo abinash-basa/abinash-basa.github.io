@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Case Study: Medical Insurance Cost Prediction — Abinash Basa</title>
+  <meta name="title" content="Case Study: Medical Insurance Cost Prediction — Abinash Basa">
+  <meta name="description" content="Master's dissertation empirical research evaluating medical insurance cost drivers using ANOVA, linear regression, and ensemble machine learning models.">
+  <meta name="author" content="Abinash Basa">
+  <link rel="canonical" href="https://abinash-basa.github.io/projects/medical-insurance-ml.html">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abinash-basa.github.io/projects/medical-insurance-ml.html">
+  <meta property="og:title" content="Case Study: Medical Insurance Cost Prediction — Abinash Basa">
+  <meta property="og:description" content="Master's dissertation empirical research evaluating medical insurance cost drivers using ANOVA, linear regression, and ensemble machine learning models.">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://abinash-basa.github.io/projects/medical-insurance-ml.html">
+  <meta property="twitter:title" content="Case Study: Medical Insurance Cost Prediction — Abinash Basa">
+  <meta property="twitter:description" content="Master's dissertation empirical research evaluating medical insurance cost drivers using ANOVA, linear regression, and ensemble machine learning models.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
+
+  <!-- Universal Stylesheets -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/project-detail.css">
+</head>
+<body data-page="project-detail">
+  <canvas id="cosmicCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-nav" id="siteNav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-brand" aria-label="Abinash Basa Home">
+        <span class="brand-monogram">AB</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu" id="navMenu" aria-hidden="true">
+          <li><a href="../index.html" class="nav-link ">Home</a></li>
+          <li><a href="../about.html" class="nav-link ">About</a></li>
+          <li><a href="../projects.html" class="nav-link is-active">Projects</a></li>
+          <li><a href="../writing.html" class="nav-link ">Writing</a></li>
+          <li><a href="../resume.html" class="nav-link ">Resume</a></li>
+          <li><a href="../contact.html" class="nav-link ">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <header class="case-hero">
+      <div class="container">
+        <nav class="case-breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../projects.html">Projects</a>
+          <span>/</span>
+          <span>Medical Insurance ML</span>
+        </nav>
+
+        <span class="section-eyebrow reveal">Master's Dissertation • Lovely Professional University</span>
+        <h1 class="case-title reveal">Statistical &amp; ML Approaches for Medical Insurance Cost Prediction</h1>
+        <p class="case-subtitle reveal">
+          An empirical investigation comparing classical inferential statistics with modern tree-based ensemble algorithms to analyze healthcare cost drivers and optimize predictive accuracy.
+        </p>
+
+        <!-- Case Metadata Grid -->
+        <div class="case-meta-grid reveal">
+          <div class="case-meta-item">
+            <span class="case-meta-label">Domain</span>
+            <span class="case-meta-value">Healthcare Analytics &amp; ML</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Top Model Performance</span>
+            <span class="case-meta-value">Gradient Boosting (R² = 0.878)</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Techniques</span>
+            <span class="case-meta-value">ANOVA, OLS, RF, GBM, SVR</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Dataset</span>
+            <span class="case-meta-value">1,338 Records, 7 Variables</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container case-body">
+      <div class="case-layout">
+        
+        <aside class="case-sidebar" aria-label="Case Study Sections">
+          <span class="case-sidebar-title">Contents</span>
+          <a href="#problem" class="case-nav-link">Research Problem</a>
+          <a href="#methodology" class="case-nav-link">Statistical Methodology</a>
+          <a href="#models" class="case-nav-link">Model Comparison</a>
+          <a href="#findings" class="case-nav-link">Key Findings</a>
+          <a href="#dissertation-pdf" class="case-nav-link">Academic Paper PDF</a>
+        </aside>
+
+        <div class="case-content">
+          
+          <section class="case-section reveal" id="problem">
+            <h2 class="case-section-title">Research Problem &amp; Objectives</h2>
+            <p>
+              Individual healthcare expenditures exhibit severe variance driven by non-linear interactions among demographic, behavioral, and clinical attributes. While classical statistical models offer transparent hypothesis testing, they often underfit complex interaction effects.
+            </p>
+            <p>
+              The objective of this dissertation was twofold:
+            </p>
+            <ul>
+              <li>Determine which demographic and lifestyle variables have statistically significant effects on individual medical charges.</li>
+              <li>Empirically benchmark five distinct regression and machine learning architectures to evaluate the tradeoff between interpretability and predictive precision.</li>
+            </ul>
+          </section>
+
+          <section class="case-section reveal" id="methodology">
+            <h2 class="case-section-title">Statistical Testing &amp; Variable Architecture</h2>
+            <p>
+              The study utilized the Medical Cost Personal Dataset (1,338 records, 7 variables: age, sex, bmi, children, smoker, region, and charges).
+            </p>
+            
+            <div class="case-callout">
+              <h4>Hypothesis Testing Highlights</h4>
+              <p>
+                Two-sample t-tests and one-way ANOVA confirmed that smoking status (p &lt; 0.001) and BMI categories represent the most statistically dominant drivers of high charges, while biological sex and geographical region exhibited marginal direct variance.
+              </p>
+            </div>
+          </section>
+
+          <section class="case-section reveal" id="models">
+            <h2 class="case-section-title">Model Benchmark &amp; Results</h2>
+            <p>
+              Five supervised algorithms were evaluated using 80/20 train-test splits on standardized metrics (Coefficient of Determination R², Root Mean Squared Error RMSE, and Mean Absolute Error MAE):
+            </p>
+
+            <div class="metric-grid">
+              <div class="metric-card">
+                <div class="metric-number">0.878</div>
+                <div class="metric-label">Gradient Boosting R²</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-number">4,352.54</div>
+                <div class="metric-label">GBM RMSE ($)</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-number">2,447.95</div>
+                <div class="metric-label">GBM MAE ($)</div>
+              </div>
+            </div>
+
+            <ul>
+              <li><strong>Gradient Boosting Regressor:</strong> Top overall performance (R² = 0.878), effectively capturing non-linear interactions between BMI and smoking status.</li>
+              <li><strong>Random Forest Regressor:</strong> Strong second-best performer (R² ~ 0.861), exhibiting robust generalization across cross-validation folds.</li>
+              <li><strong>Decision Tree Regressor:</strong> Exhibited higher variance and susceptibility to local overfitting (R² ~ 0.730).</li>
+              <li><strong>Multiple Linear Regression (OLS):</strong> Provided transparent baseline coefficients (R² ~ 0.750) but missed high-cost compounding tails.</li>
+              <li><strong>Support Vector Regression (SVR):</strong> Sensitive to kernel scaling on raw non-linear price curves.</li>
+            </ul>
+          </section>
+
+          <section class="case-section reveal" id="findings">
+            <h2 class="case-section-title">Product &amp; Actuarial Implications</h2>
+            <p>
+              From a product management and health-tech underwriting perspective, pure linear scoring tables materially under-price risk for high-BMI smokers. Incorporating non-linear boosting ensembles into underwriting tools enables actuarial teams to tailor risk-adjusted policy pricing while identifying high-risk cohorts for preventive wellness interventions.
+            </p>
+          </section>
+
+          <!-- Document Action Box -->
+          <section class="case-section reveal" id="dissertation-pdf">
+            <div class="doc-action-box">
+              <div class="doc-action-info">
+                <h4>Read Full Dissertation Paper</h4>
+                <p>Complete 4th-semester academic dissertation document submitted at Lovely Professional University (PDF, 647 KB).</p>
+              </div>
+              <a href="../assets/docs/medical-insurance-dissertation.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                View PDF Dissertation
+              </a>
+            </div>
+          </section>
+
+          <div class="case-footer-nav">
+            <a href="basa-academies.html" class="btn btn-secondary">← Previous: BASA Academies</a>
+            <a href="spotify-ytmusic-migration.html" class="btn btn-primary">Next: Spotify Tool →</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Abinash Basa</h3>
+          <p>Product Management × Mathematics × AI. Building disciplined, data-driven systems at the intersection of technical depth and human needs.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <span class="footer-links-title">Connect &amp; Follow</span>
+          <div class="footer-social-row">
+            <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="4" x2="20" y2="4"/><line x1="4" y1="9" x2="20" y2="9"/><path d="M4 14l8 6 8-6"/></svg>
+              Substack
+            </a>
+            <a href="https://www.linkedin.com/in/theabinashbasa" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/abinash-basa" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="mailto:abinashbasa15@gmail.com" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg>
+              Email
+            </a>
+            <a href="https://x.com/AbinashBasa1" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+              X
+            </a>
+            <a href="https://www.youtube.com/@ventbyakb" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="4"/><polygon points="10,8 16,12 10,16"/></svg>
+              YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Abinash Basa. All rights reserved.</p>
+        <p>Built with semantic precision &amp; cosmic aesthetics.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/cosmic-background.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

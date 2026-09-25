@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Case Study: Sleep Recovery Mathematical Modelling — Abinash Basa</title>
+  <meta name="title" content="Case Study: Sleep Recovery Mathematical Modelling — Abinash Basa">
+  <meta name="description" content="Mathematical research paper analyzing cognitive recovery dynamics following sleep debt using ordinary differential equations and Euler's numerical simulation.">
+  <meta name="author" content="Abinash Basa">
+  <link rel="canonical" href="https://abinash-basa.github.io/projects/sleep-recovery-math.html">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abinash-basa.github.io/projects/sleep-recovery-math.html">
+  <meta property="og:title" content="Case Study: Sleep Recovery Mathematical Modelling — Abinash Basa">
+  <meta property="og:description" content="Mathematical research paper analyzing cognitive recovery dynamics following sleep debt using ordinary differential equations and Euler's numerical simulation.">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://abinash-basa.github.io/projects/sleep-recovery-math.html">
+  <meta property="twitter:title" content="Case Study: Sleep Recovery Mathematical Modelling — Abinash Basa">
+  <meta property="twitter:description" content="Mathematical research paper analyzing cognitive recovery dynamics following sleep debt using ordinary differential equations and Euler's numerical simulation.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
+
+  <!-- Universal Stylesheets -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/project-detail.css">
+</head>
+<body data-page="project-detail">
+  <canvas id="cosmicCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-nav" id="siteNav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-brand" aria-label="Abinash Basa Home">
+        <span class="brand-monogram">AB</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu" id="navMenu" aria-hidden="true">
+          <li><a href="../index.html" class="nav-link ">Home</a></li>
+          <li><a href="../about.html" class="nav-link ">About</a></li>
+          <li><a href="../projects.html" class="nav-link is-active">Projects</a></li>
+          <li><a href="../writing.html" class="nav-link ">Writing</a></li>
+          <li><a href="../resume.html" class="nav-link ">Resume</a></li>
+          <li><a href="../contact.html" class="nav-link ">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <header class="case-hero">
+      <div class="container">
+        <nav class="case-breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../projects.html">Projects</a>
+          <span>/</span>
+          <span>Sleep Recovery Math</span>
+        </nav>
+
+        <span class="section-eyebrow reveal">Academic Term Paper • Lovely Professional University</span>
+        <h1 class="case-title reveal">Mathematical Modeling of Sleep Quality &amp; Recovery Rate Dynamics</h1>
+        <p class="case-subtitle reveal">
+          Formulating and solving differential equation systems to model cognitive restoration and sleep debt recovery trajectories across varying physiological parameters.
+        </p>
+
+        <!-- Case Metadata Grid -->
+        <div class="case-meta-grid reveal">
+          <div class="case-meta-item">
+            <span class="case-meta-label">Domain</span>
+            <span class="case-meta-value">Applied Mathematics &amp; Biomathematics</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Mathematical Core</span>
+            <span class="case-meta-value">Ordinary Differential Equations</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Numerical Method</span>
+            <span class="case-meta-value">Euler's Method Simulation</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Semester</span>
+            <span class="case-meta-value">3rd Sem M.Sc. Mathematics</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container case-body">
+      <div class="case-layout">
+        
+        <aside class="case-sidebar" aria-label="Case Study Sections">
+          <span class="case-sidebar-title">Contents</span>
+          <a href="#abstract" class="case-nav-link">Abstract &amp; Context</a>
+          <a href="#formulation" class="case-nav-link">Mathematical Formulation</a>
+          <a href="#simulation" class="case-nav-link">Numerical Simulations</a>
+          <a href="#insights" class="case-nav-link">Cognitive Insights</a>
+          <a href="#paper-pdf" class="case-nav-link">Academic Paper PDF</a>
+        </aside>
+
+        <div class="case-content">
+          
+          <section class="case-section reveal" id="abstract">
+            <h2 class="case-section-title">Abstract &amp; Problem Context</h2>
+            <p>
+              Sleep debt recovery is not a linear function of elapsed sleep time. Instead, the rate of restorative biochemical and cognitive restoration exhibits non-linear saturation characteristics dependent on cumulative sleep deficit, circadian phase, and recovery rate constants.
+            </p>
+            <p>
+              Written during my 3rd semester of M.Sc. Mathematics at Lovely Professional University, this research formulates a mathematical framework modeling the rate of sleep recovery over time.
+            </p>
+          </section>
+
+          <section class="case-section reveal" id="formulation">
+            <h2 class="case-section-title">Mathematical Formulation &amp; ODE Models</h2>
+            <p>
+              The core dynamics were modeled using first-order differential equations representing the rate of change of cognitive deficit $D(t)$ with respect to continuous recovery time $t$:
+            </p>
+            
+            <div class="case-callout">
+              <h4>Exponential Decay Model</h4>
+              <p>
+                $$\frac{dD}{dt} = -\lambda D(t) + S(t)$$
+                Where $\lambda$ denotes the recovery rate coefficient and $S(t)$ captures circadian stimulus effects. Analytical solutions demonstrate exponential decay of sleep debt during continuous sleep bouts.
+              </p>
+            </div>
+          </section>
+
+          <section class="case-section reveal" id="simulation">
+            <h2 class="case-section-title">Numerical Simulation &amp; Euler's Method</h2>
+            <p>
+              To evaluate trajectories under discrete, fragmented sleep schedules, the differential system was solved numerically using Euler's method across multiple parameter variations.
+            </p>
+            <p>
+              The simulations illustrate how fragmented sleep schedules introduce cumulative recovery friction compared to continuous uninterrupted restoration windows of identical net duration.
+            </p>
+          </section>
+
+          <section class="case-section reveal" id="insights">
+            <h2 class="case-section-title">Key Insights &amp; Applications</h2>
+            <ul>
+              <li><strong>Non-Linear Restoration:</strong> Early sleep cycles achieve the highest rate of cognitive debt clearance per unit time.</li>
+              <li><strong>Mathematical Grounding:</strong> Demonstrates how formal differential equations bridge abstract mathematical theory and human biological systems.</li>
+            </ul>
+          </section>
+
+          <!-- Document Action Box -->
+          <section class="case-section reveal" id="paper-pdf">
+            <div class="doc-action-box">
+              <div class="doc-action-info">
+                <h4>Read Full Academic Term Paper</h4>
+                <p>Complete 3rd-semester research term paper submitted at Lovely Professional University (PDF, 538 KB).</p>
+              </div>
+              <a href="../assets/docs/sleep-recovery-termpaper.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                View PDF Paper
+              </a>
+            </div>
+          </section>
+
+          <div class="case-footer-nav">
+            <a href="spotify-ytmusic-migration.html" class="btn btn-secondary">← Previous: Spotify Tool</a>
+            <a href="basa-academies.html" class="btn btn-primary">Next: BASA Academies →</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Abinash Basa</h3>
+          <p>Product Management × Mathematics × AI. Building disciplined, data-driven systems at the intersection of technical depth and human needs.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <span class="footer-links-title">Connect &amp; Follow</span>
+          <div class="footer-social-row">
+            <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="4" x2="20" y2="4"/><line x1="4" y1="9" x2="20" y2="9"/><path d="M4 14l8 6 8-6"/></svg>
+              Substack
+            </a>
+            <a href="https://www.linkedin.com/in/theabinashbasa" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/abinash-basa" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="mailto:abinashbasa15@gmail.com" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg>
+              Email
+            </a>
+            <a href="https://x.com/AbinashBasa1" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+              X
+            </a>
+            <a href="https://www.youtube.com/@ventbyakb" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="4"/><polygon points="10,8 16,12 10,16"/></svg>
+              YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Abinash Basa. All rights reserved.</p>
+        <p>Built with semantic precision &amp; cosmic aesthetics.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/cosmic-background.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
