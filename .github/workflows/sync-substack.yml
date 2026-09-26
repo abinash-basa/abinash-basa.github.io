@@ -1,0 +1,40 @@
+﻿name: Sync Substack Writing & Notes
+
+on:
+  schedule:
+    # Run every 8 hours (at 00:00, 08:00, 16:00 UTC)
+    - cron: '0 */8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-substack:
+    name: Sync Substack Data
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Substack sync script
+        run: python scripts/sync_substack.py
+
+      - name: Commit and push changes if updated
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/)" ]; then
+            echo "Substack data changes detected. Committing..."
+            git add data/
+            git commit -m "chore(sync): update Substack notes and articles [skip ci]"
+            git push
+          else
+            echo "No changes detected in Substack data. Skipping commit."
+          fi

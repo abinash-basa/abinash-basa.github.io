@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -35,87 +35,29 @@
 
   <!-- Universal Stylesheets -->
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/writing.css">
+
+  <!-- Breadcrumb Schema -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://abinash-basa.github.io/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Writing",
-      "item": "https://abinash-basa.github.io/writing.html"
-    }
-  ]
-}
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://abinash-basa.github.io/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Writing",
+        "item": "https://abinash-basa.github.io/writing.html"
+      }
+    ]
+  }
   </script>
-  <style>
-    .writing-hero {
-      padding: 8.5rem 0 4rem;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-    .writing-archive-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 2rem;
-      margin: 3.5rem 0 6rem;
-    }
-    .essay-card {
-      padding: 2.25rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 320px;
-    }
-    .essay-theme-tag {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--accent);
-      margin-bottom: 0.75rem;
-    }
-    .essay-title {
-      font-family: var(--font-serif);
-      font-size: 1.65rem;
-      font-weight: 400;
-      color: var(--text);
-      line-height: 1.3;
-      margin-bottom: 0.75rem;
-    }
-    .essay-excerpt {
-      font-size: 0.9375rem;
-      color: var(--text-secondary);
-      line-height: 1.65;
-      margin-bottom: 1.5rem;
-    }
-    .substack-banner {
-      padding: 3.5rem;
-      border-radius: 12px;
-      background: var(--bg-surface-elevated);
-      border: 1px solid var(--border);
-      text-align: center;
-      margin: 2rem 0 5rem;
-    }
-    .substack-banner h2 {
-      font-family: var(--font-serif);
-      font-size: 2.25rem;
-      color: var(--text);
-      margin-bottom: 1rem;
-    }
-    .substack-banner p {
-      color: var(--text-secondary);
-      font-size: 1.0625rem;
-      max-width: 54ch;
-      margin: 0 auto 2rem;
-    }
-  </style>
 </head>
 <body data-page="writing">
   <canvas id="cosmicCanvas" aria-hidden="true"></canvas>
@@ -150,6 +92,7 @@
   </header>
 
   <main id="mainContent">
+    <!-- Writing Hero Section -->
     <header class="writing-hero" aria-labelledby="writingHeading">
       <div class="container">
         <span class="section-eyebrow reveal">Substack Publication</span>
@@ -161,80 +104,254 @@
     </header>
 
     <div class="container">
-      <!-- Substack Lead Banner -->
+      <!-- 1. LATEST NOTES SECTION (Short-Form Rolling Feed) -->
+      <section class="writing-section-wrapper" id="latestNotesSection" aria-labelledby="notesHeading">
+        <div class="section-header-flex reveal">
+          <div>
+            <span class="section-eyebrow">Frequent Thinking</span>
+            <h2 class="section-heading" id="notesHeading" style="font-size: 2.25rem;">Latest Notes</h2>
+            <p class="section-header-desc">
+              Short-form observations, philosophical fragments, and daily thinking published directly to Substack Notes.
+            </p>
+          </div>
+          <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="Follow Substack Notes">
+            Follow on Substack
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <div class="notes-grid" id="notesContainer">
+          <!-- Fallback Pre-Rendered Cards -->
+          <article class="note-card reveal is-visible" data-note-id="340027298">
+            <div class="note-meta">
+              <span class="note-badge">
+                <span class="badge-dot" style="background: currentColor;"></span>
+                Substack Note
+              </span>
+              <time class="note-date" datetime="2026-09-18T13:09:54.712000+00:00">Sep 18, 2026</time>
+            </div>
+            <h3 class="note-title">The more I read about Atman, the more I wonder: what do I really mean when I say "I"?</h3>
+            <p class="note-excerpt">My body changes. My thoughts change. Even my idea of myself changes. So what is this "I" that stays through all of it?</p>
+            <div class="note-footer">
+              <a href="https://substack.com/@abinashbasa/note/c-340027298" target="_blank" rel="noopener noreferrer" class="note-link">
+                Read Note on Substack
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="note-card reveal is-visible" data-note-id="340026158">
+            <div class="note-meta">
+              <span class="note-badge">
+                <span class="badge-dot" style="background: currentColor;"></span>
+                Substack Note
+              </span>
+              <time class="note-date" datetime="2026-09-18T13:08:15.354000+00:00">Sep 18, 2026</time>
+            </div>
+            <h3 class="note-title">Just starting to explore Advaita Vedanta.</h3>
+            <p class="note-excerpt">One phrase keeps pulling me back- Aham Brahmasmi. "I am Brahman"</p>
+            <div class="note-footer">
+              <a href="https://substack.com/@abinashbasa/note/c-340026158" target="_blank" rel="noopener noreferrer" class="note-link">
+                Read Note on Substack
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="note-card reveal is-visible" data-note-id="301320580">
+            <div class="note-meta">
+              <span class="note-badge">
+                <span class="badge-dot" style="background: currentColor;"></span>
+                Substack Note
+              </span>
+              <time class="note-date" datetime="2026-07-25T04:15:10.611000+00:00">Jul 25, 2026</time>
+            </div>
+            <h3 class="note-title">"God is dead. God remains dead. And we have killed him." - Friedrich Nietzsche</h3>
+            <p class="note-excerpt">Nietzsche's real question wasn't about God. It was: if nobody hands you meaning anymore, do you actually have the courage to build your own or do you just grab the nearest replacement dogma and pretend that was your choice all along? That's a harder question than it sounds.</p>
+            <div class="note-footer">
+              <a href="https://substack.com/@abinashbasa/note/c-301320580" target="_blank" rel="noopener noreferrer" class="note-link">
+                Read Note on Substack
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 2. SELECTED ARTICLES SECTION (Persistent Long-Form Essays) -->
+      <section class="writing-section-wrapper" id="selectedArticlesSection" aria-labelledby="articlesHeading">
+        <div class="section-header-flex reveal">
+          <div>
+            <span class="section-eyebrow">Long-Form Essays</span>
+            <h2 class="section-heading" id="articlesHeading" style="font-size: 2.25rem;">Selected Articles</h2>
+            <p class="section-header-desc">
+              Persistent collection of deep-dive essays, technical breakdowns, and conceptual frameworks published on Substack.
+            </p>
+          </div>
+        </div>
+
+        <div class="articles-grid" id="articlesContainer">
+          <!-- Fallback Pre-Rendered Articles -->
+          <article class="article-card reveal is-visible" data-article-id="207723513">
+            <div class="article-content">
+              <div>
+                <div class="article-meta">
+                  <span class="article-badge">
+                    <span class="badge-dot" style="background: currentColor;"></span>
+                    Long-Form Essay
+                  </span>
+                  <time class="note-date" datetime="2026-07-20T02:25:06.182000+00:00">Jul 20, 2026</time>
+                </div>
+                <h3 class="article-title">Responsible AI</h3>
+                <p class="article-excerpt">
+                  Every other week there's a new headline about "Responsible AI", either a company launching a framework, government launching some guidelines or a new compliance document.
+                </p>
+              </div>
+              <div class="article-footer">
+                <a href="https://abinashbasa.substack.com/p/responsible-ai" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                  Read Full Article
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card reveal is-visible" data-article-id="207617729">
+            <div class="article-cover-wrap">
+              <img src="https://substackcdn.com/image/fetch/$s_!GspF!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F671d20aa-db62-4d5e-aa91-3da48ead1720_736x955.png" alt="Somewhere near god !?" class="article-cover-img" loading="lazy" />
+            </div>
+            <div class="article-content">
+              <div>
+                <div class="article-meta">
+                  <span class="article-badge">
+                    <span class="badge-dot" style="background: currentColor;"></span>
+                    Long-Form Essay
+                  </span>
+                  <time class="note-date" datetime="2026-07-19T02:53:59.633000+00:00">Jul 19, 2026</time>
+                </div>
+                <h3 class="article-title">Somewhere near god !?</h3>
+                <p class="article-excerpt">
+                  With the Rath Yatra and all going the usual questions come to my mind they've been on my mind all along.
+                </p>
+              </div>
+              <div class="article-footer">
+                <a href="https://abinashbasa.substack.com/p/somewhere-near-god" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                  Read Full Article
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card reveal is-visible" data-article-id="156907304">
+            <div class="article-content">
+              <div>
+                <div class="article-meta">
+                  <span class="article-badge">
+                    <span class="badge-dot" style="background: currentColor;"></span>
+                    Long-Form Essay
+                  </span>
+                  <time class="note-date" datetime="2025-02-11T07:10:29.892000+00:00">Feb 11, 2025</time>
+                </div>
+                <h3 class="article-title">The Pursuit of AGI. Are we close to True Intelligence.(David Deustch's perspective)</h3>
+                <p class="article-excerpt">
+                  Artificial General Intelligence (AGI) - machines capable of human-level reasoning, creativity, and problem-solving - has long been a goal in AI research.
+                </p>
+              </div>
+              <div class="article-footer">
+                <a href="https://abinashbasa.substack.com/p/the-pursuit-of-agi-are-we-close-to" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                  Read Full Article
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. FEATURED THEMATIC SERIES (Preserved Curated Topics) -->
+      <section class="writing-section-wrapper" aria-labelledby="thematicHeading">
+        <div class="section-header-flex reveal">
+          <div>
+            <span class="section-eyebrow">Thematic Archives</span>
+            <h2 class="section-heading" id="thematicHeading" style="font-size: 2.25rem;">Featured Series and Topics</h2>
+            <p class="section-header-desc">
+              Core intellectual themes and ongoing writing pillars exploring mathematics, product strategy, systems, and venture building.
+            </p>
+          </div>
+        </div>
+
+        <div class="thematic-grid">
+          <article class="cosmic-card thematic-card reveal">
+            <div>
+              <span class="thematic-theme-tag">Mathematics and ML</span>
+              <h3 class="thematic-title">Mathematical Intuition for Machine Learning</h3>
+              <p class="thematic-excerpt">
+                Breaking down linear algebra, probability distributions, gradients, and optimization theory specifically for product managers and analytical thinkers.
+              </p>
+            </div>
+            <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              Explore on Substack
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <article class="cosmic-card thematic-card reveal">
+            <div>
+              <span class="thematic-theme-tag">Product Management</span>
+              <h3 class="thematic-title">Product Strategy in the Age of Generative AI</h3>
+              <p class="thematic-excerpt">
+                Moving beyond demo hype. Evaluating model capabilities, designing interface affordances, handling non-deterministic outputs, and building defensible systems.
+              </p>
+            </div>
+            <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              Explore on Substack
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <article class="cosmic-card thematic-card reveal">
+            <div>
+              <span class="thematic-theme-tag">Building in Public</span>
+              <h3 class="thematic-title">Product Experiments and Honest Outcomes</h3>
+              <p class="thematic-excerpt">
+                Documenting operational experiments, software tool iterations, and educational program deliveries with real numbers, candid reflection, and practical takeaways.
+              </p>
+            </div>
+            <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              Explore on Substack
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <article class="cosmic-card thematic-card reveal">
+            <div>
+              <span class="thematic-theme-tag">Systems and Philosophy</span>
+              <h3 class="thematic-title">The Power of Disciplined Abstraction</h3>
+              <p class="thematic-excerpt">
+                How mathematical formalisms help product teams clarify ambiguous problems, establish modular architectures, and maintain conceptual simplicity.
+              </p>
+            </div>
+            <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              Explore on Substack
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. SUBSTACK LEAD BANNER (VIEW ALL WRITING CTA) -->
       <div class="substack-banner reveal">
         <h2>Learning and Thinking in Public</h2>
         <p>
           I publish regular essays and technical notes on Substack, focusing on mathematical foundations, emerging AI product capabilities, and practical lessons from building software and educational programs.
         </p>
-        <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="4" x2="20" y2="4"/><line x1="4" y1="9" x2="20" y2="9"/><path d="M4 14l8 6 8-6"/></svg>
-          Read on Substack
-        </a>
-      </div>
-
-      <!-- Curated Thematic Series -->
-      <div class="section-header-flex reveal">
-        <div>
-          <span class="section-eyebrow">Thematic Archives</span>
-          <h2 class="section-heading" style="font-size: 2.25rem;">Featured Series and Topics</h2>
+        <div class="substack-banner-actions">
+          <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="4" x2="20" y2="4"/><line x1="4" y1="9" x2="20" y2="9"/><path d="M4 14l8 6 8-6"/></svg>
+            View All Writing on Substack
+          </a>
         </div>
-      </div>
-
-      <div class="writing-archive-grid">
-        
-        <article class="cosmic-card essay-card reveal">
-          <div>
-            <span class="essay-theme-tag">Mathematics and ML</span>
-            <h3 class="essay-title">Mathematical Intuition for Machine Learning</h3>
-            <p class="essay-excerpt">
-              Breaking down linear algebra, probability distributions, gradients, and optimization theory specifically for product managers and analytical thinkers.
-            </p>
-          </div>
-          <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-            Read on Substack →
-          </a>
-        </article>
-
-        <article class="cosmic-card essay-card reveal">
-          <div>
-            <span class="essay-theme-tag">Product Management</span>
-            <h3 class="essay-title">Product Strategy in the Age of Generative AI</h3>
-            <p class="essay-excerpt">
-              Moving beyond demo hype. Evaluating model capabilities, designing interface affordances, handling non-deterministic outputs, and building defensible systems.
-            </p>
-          </div>
-          <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-            Read on Substack →
-          </a>
-        </article>
-
-        <article class="cosmic-card essay-card reveal">
-          <div>
-            <span class="essay-theme-tag">Building in Public</span>
-            <h3 class="essay-title">Product Experiments and Honest Outcomes</h3>
-            <p class="essay-excerpt">
-              Documenting operational experiments, software tool iterations, and educational program deliveries with real numbers, candid reflection, and practical takeaways.
-            </p>
-          </div>
-          <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-            Read on Substack →
-          </a>
-        </article>
-
-        <article class="cosmic-card essay-card reveal">
-          <div>
-            <span class="essay-theme-tag">Systems and Philosophy</span>
-            <h3 class="essay-title">The Power of Disciplined Abstraction</h3>
-            <p class="essay-excerpt">
-              How mathematical formalisms help product teams clarify ambiguous problems, establish modular architectures, and maintain conceptual simplicity.
-            </p>
-          </div>
-          <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-            Read on Substack →
-          </a>
-        </article>
-
       </div>
     </div>
   </main>
@@ -287,5 +404,6 @@
 
   <script src="js/cosmic-background.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script src="js/writing.js" defer></script>
 </body>
 </html>
