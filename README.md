@@ -1,73 +1,31 @@
-# Abinash Basa - Personal Portfolio
+﻿# Abinash Basa - Personal Website
 
-Personal website and portfolio of Abinash Basa, highlighting academic background, project case studies, empirical research, and analytical writing at the intersection of Mathematics, Data Analytics, Product Management, and Artificial Intelligence.
+Personal website and portfolio of Abinash Basa, featuring projects, research, and writing in Product Management, Mathematics, Data Analytics, and AI.
 
-Live URL: [https://abinash-basa.github.io](https://abinash-basa.github.io)
+Live Site: [https://abinash-basa.github.io](https://abinash-basa.github.io)
 
-## Professional Positioning
-- Product Management, Data Analytics, and AI Product Roles
-- MBA in Product Management & Generative AI (IIT Patna, 2026 - 2028)
-- M.Sc. Mathematics (Lovely Professional University, 2024 - 2026)
-- B.Sc. Mathematics (MPC Autonomous College, 2021 - 2024)
+## Education & Background
+- MBA in Product Management & Generative AI, IIT Patna (2026 - 2028)
+- M.Sc. in Mathematics, Lovely Professional University (2024 - 2026)
+- B.Sc. in Mathematics, MPC Autonomous College (2021 - 2024)
 
-## Architecture and Technology
-- Static HTML5, CSS3, Vanilla JavaScript
-- High-performance HTML5 Canvas cosmic starfield and mathematical curve background
-- WCAG AA accessibility standards with dark and light theme support
-- Full progressive enhancement / no-JavaScript fallback
-- Zero external build dependencies
+## Projects Included
+- **BASA Academies:** Business operations and training programs for AI and digital literacy in Odisha.
+- **Medical Insurance ML:** M.Sc. dissertation evaluating ANOVA, linear regression, and Gradient Boosting (R² = 0.878) on medical cost prediction.
+- **Spotify to YouTube Music Migration:** Python tool using OAuth 2.0 and fuzzy search matching to sync playlists between music platforms.
+- **Sleep Recovery Math:** Term paper modeling cognitive recovery with ordinary differential equations and Euler numerical simulations.
 
-## Project Structure
-`
-/
-├── index.html                   # Homepage (Positioning, Selected Work, Writing, Contact)
-├── about.html                   # About Me (Education, Operating Principles, Background)
-├── projects.html                # Project Archive with Category Filtering
-├── writing.html                 # Writing and Ideas (Substack Publication and Series)
-├── resume.html                  # Web Resume / CV (Print-friendly and PDF download)
-├── contact.html                 # Direct Inquiries and Social Links
-├── 404.html                     # Custom 404 Error Page
-│
-├── projects/                    # Detailed Case Studies
-│   ├── basa-academies.html      # BASA Academies Venture and Program Leadership
-│   ├── medical-insurance-ml.html# Medical Insurance ML Dissertation (R² = 0.878)
-│   ├── spotify-ytmusic-migration.html # Spotify to YouTube Music Migration Engine
-│   └── sleep-recovery-math.html # Sleep Recovery Ordinary Differential Equations Research
-│
-├── css/
-│   ├── main.css                 # Universal Tokens, Navigation, Footer, Buttons, Theme, a11y
-│   ├── home.css                 # Hero, Featured Projects, Writing Spotlight
-│   ├── projects.css             # Archive Grid and Filter Bar
-│   ├── project-detail.css       # Case Study Structure, Meta Grid, Sidebars, Callouts
-│   └── resume.css               # Web Resume Timeline, Skills Matrix, Print Styles
-│
-├── js/
-│   ├── cosmic-background.js     # Canvas Starfield and Mathematical Curves System
-│   └── main.js                  # Theme Toggle, Mobile Navigation, Scroll Reveal, Clipboard
-│
-├── assets/
-│   ├── docs/                    # Verified Academic Research PDFs
-│   │   ├── medical-insurance-dissertation.pdf
-│   │   └── sleep-recovery-termpaper.pdf
-│   └── images/
-│       └── og-preview.png       # Open Graph / Twitter Card Image
-│
-├── favicon.svg                  # Brand Monogram Favicon
-├── resume.pdf                   # Official PDF Curriculum Vitae
-├── robots.txt                   # Search Engine Crawler Guidance
-└── sitemap.xml                  # XML Sitemap with Canonical URLs
-`
+## Technology
+- HTML5, Vanilla CSS3, Vanilla JavaScript
+- Canvas background with subtle mathematical curves
+- Fully responsive across desktop, tablet, and mobile
+- Automated Substack integration via GitHub Actions
 
 ## Running Locally
-You can run this project locally with any static web server:
-
-`ash
-# Using Python
+```bash
+# Start a local static server
 python -m http.server 8000
 
 # Open in browser
 http://localhost:8000
-`
-
-## License
-Content and design copyright (c) 2026 Abinash Basa. All rights reserved.
+```

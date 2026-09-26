@@ -1,28 +1,28 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <title>Case Study: Spotify to YouTube Music Migration : Abinash Basa</title>
-  <meta name="title" content="Case Study: Spotify to YouTube Music Migration : Abinash Basa">
-  <meta name="description" content="Case study on automated playlist synchronization and migration tool between Spotify and YouTube Music using Python, OAuth2, and REST APIs.">
+  <title>Spotify to YouTube Music Playlist Migration Tool : Abinash Basa</title>
+  <meta name="title" content="Spotify to YouTube Music Playlist Migration Tool : Abinash Basa">
+  <meta name="description" content="A Python tool for migrating Spotify playlist libraries to YouTube Music using OAuth2 authentication, rate limiting, and fuzzy metadata matching.">
   <meta name="author" content="Abinash Basa">
   <link rel="canonical" href="https://abinash-basa.github.io/projects/spotify-ytmusic-migration.html">
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://abinash-basa.github.io/projects/spotify-ytmusic-migration.html">
-  <meta property="og:title" content="Case Study: Spotify to YouTube Music Migration : Abinash Basa">
-  <meta property="og:description" content="Case study on automated playlist synchronization and migration tool between Spotify and YouTube Music using Python, OAuth2, and REST APIs.">
+  <meta property="og:title" content="Spotify to YouTube Music Playlist Migration Tool : Abinash Basa">
+  <meta property="og:description" content="A Python tool for migrating Spotify playlist libraries to YouTube Music using OAuth2 authentication, rate limiting, and fuzzy metadata matching.">
   <meta property="og:image" content="https://abinash-basa.github.io/assets/images/og-preview.png">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://abinash-basa.github.io/projects/spotify-ytmusic-migration.html">
-  <meta name="twitter:title" content="Case Study: Spotify to YouTube Music Migration : Abinash Basa">
-  <meta name="twitter:description" content="Case study on automated playlist synchronization and migration tool between Spotify and YouTube Music using Python, OAuth2, and REST APIs.">
+  <meta name="twitter:title" content="Spotify to YouTube Music Playlist Migration Tool : Abinash Basa">
+  <meta name="twitter:description" content="A Python tool for migrating Spotify playlist libraries to YouTube Music using OAuth2 authentication, rate limiting, and fuzzy metadata matching.">
   <meta name="twitter:image" content="https://abinash-basa.github.io/assets/images/og-preview.png">
 
   <!-- Favicon -->
@@ -44,7 +44,7 @@
     "@type": "Person",
     "name": "Abinash Basa"
   },
-  "description": "Case study detailing automated playlist migration engine using Python, Spotify Web API, and YouTube Data API v3."
+  "description": "Python CLI tool transferring playlists between Spotify and YouTube Music with OAuth2 and fuzzy metadata search."
 }
   </script>
   <link rel="stylesheet" href="../css/project-detail.css">
@@ -89,123 +89,124 @@
           <span>/</span>
           <a href="../projects.html">Projects</a>
           <span>/</span>
-          <span>Spotify to YT Music</span>
+          <span>Spotify to YT Music Migration</span>
         </nav>
 
-        <span class="section-eyebrow reveal">Developer Tool and Systems Integration</span>
-        <h1 class="case-title reveal" id="caseHeading">Spotify to YouTube Music Migration Engine</h1>
+        <span class="section-eyebrow reveal">Python Tool</span>
+        <h1 class="case-title reveal" id="caseHeading">Spotify to YouTube Music Playlist Migration Tool</h1>
         <p class="case-subtitle reveal">
-          An automated library synchronization engine built to transfer user playlists across streaming platforms with OAuth2 multi-token flows and fuzzy track resolution heuristics.
+          A Python command-line tool that syncs playlist libraries from Spotify to YouTube Music with OAuth 2.0 authentication, rate limit resilience, and fuzzy metadata track matching.
         </p>
 
         <!-- Case Metadata Grid -->
         <div class="case-meta-grid reveal">
           <div class="case-meta-item">
+            <span class="case-meta-label">Type</span>
+            <span class="case-meta-value">Open Source Automation Tool</span>
+          </div>
+          <div class="case-meta-item">
             <span class="case-meta-label">Language</span>
-            <span class="case-meta-value">Python</span>
+            <span class="case-meta-value">Python 3</span>
           </div>
           <div class="case-meta-item">
             <span class="case-meta-label">APIs</span>
-            <span class="case-meta-value">Spotify Web API, YouTube v3</span>
+            <span class="case-meta-value">Spotify Web API, YouTube Data API v3</span>
           </div>
           <div class="case-meta-item">
-            <span class="case-meta-label">Security</span>
-            <span class="case-meta-value">OAuth 2.0 PKCE / User Auth</span>
-          </div>
-          <div class="case-meta-item">
-            <span class="case-meta-label">Key Challenge</span>
-            <span class="case-meta-value">Fuzzy Matching and Quota Limits</span>
+            <span class="case-meta-label">Code</span>
+            <span class="case-meta-value"><a href="https://github.com/abinash-basa" target="_blank" rel="noopener" style="color: var(--accent);">github.com/abinash-basa</a></span>
           </div>
         </div>
       </div>
     </header>
 
-    <div class="container case-body">
+    <div class="container">
       <div class="case-layout">
         
-        <aside class="case-sidebar" aria-label="Case Study Sections">
-          <span class="case-sidebar-title">Contents</span>
-          <a href="#overview" class="case-nav-link">Overview and Problem</a>
-          <a href="#architecture" class="case-nav-link">System Architecture</a>
-          <a href="#matching" class="case-nav-link">Matching Heuristics</a>
-          <a href="#resilience" class="case-nav-link">Quota and Rate Resilience</a>
-          <a href="#takeaways" class="case-nav-link">Key Takeaways</a>
+        <!-- Sticky Sidebar Navigation -->
+        <aside class="case-sidebar" aria-label="Project sections">
+          <a href="#overview" class="case-nav-link">Overview &amp; Problem</a>
+          <a href="#architecture" class="case-nav-link">Pipeline &amp; OAuth</a>
+          <a href="#matching" class="case-nav-link">Track Matching</a>
+          <a href="#resilience" class="case-nav-link">Rate Limiting</a>
+          <a href="#takeaways" class="case-nav-link">Key Learnings</a>
         </aside>
 
+        <!-- Case Content -->
         <div class="case-content">
           
           <section class="case-section reveal" id="overview">
             <h2 class="case-section-title">Overview and Problem Statement</h2>
             <p>
-              Users frequently maintain curated music collections on Spotify but face substantial manual friction when migrating to YouTube Music. Existing commercial tools often impose restrictive paywalls or fail to resolve subtle track metadata discrepancies (remixes, live versions, remaster tags).
+              Moving music libraries from Spotify to YouTube Music manually takes hours. Existing third-party web services often require paid subscriptions, have strict song limits, or struggle with track title discrepancies (such as remasters, featured artist labels, or live versions).
             </p>
             <p>
-              This project was created as an automated, developer-friendly synchronization utility that extracts playlist data from Spotify and reconstructs identical playlist schemas on YouTube Music.
+              I built this Python tool to automate the entire transfer process for personal use without third-party fees.
             </p>
           </section>
 
           <section class="case-section reveal" id="architecture">
-            <h2 class="case-section-title">System Architecture and Workflow</h2>
+            <h2 class="case-section-title">Workflow and OAuth Setup</h2>
             <p>
-              The migration engine operates in a multi-stage sequential pipeline:
+              The tool runs through three main steps:
             </p>
 
             <div class="case-callout">
               <h4>1. Dual OAuth 2.0 Authentication</h4>
               <p>
-                Acquires read access tokens from Spotify and write permissions for YouTube Data API v3, managing token refresh cycles securely in memory.
+                Authenticates with Spotify to read user playlists and with Google to write playlists to YouTube Music, managing token refreshes automatically.
               </p>
             </div>
 
             <div class="case-callout">
               <h4>2. Metadata Extraction and Cleaning</h4>
               <p>
-                Paginates through Spotify user playlists, extracting track names, primary artists, album titles, and ISRC codes while stripping clutter terms (e.g., "- 2011 Remaster", "(feat. ...)").
+                Fetches track titles, primary artists, and album names from Spotify, stripping noise like "(Remastered 2011)" or "(feat. ...)" to improve search hit rates.
               </p>
             </div>
 
             <div class="case-callout">
-              <h4>3. Automated Playlist Construction</h4>
+              <h4>3. Playlist Creation and Batch Insert</h4>
               <p>
-                Creates matching playlists on YouTube Music and batch-inserts identified video track IDs, logging any unresolvable items for manual review.
+                Creates the target playlist on YouTube Music, searches for the best matching video ID for each track, and inserts the songs in batches.
               </p>
             </div>
           </section>
 
           <section class="case-section reveal" id="matching">
-            <h2 class="case-section-title">Fuzzy Track Matching Heuristics</h2>
+            <h2 class="case-section-title">Fuzzy Track Matching</h2>
             <p>
-              YouTube's search index is significantly noisier than structured streaming catalogs due to user-uploaded covers, lyric videos, and live audio.
+              YouTube's search catalog includes official tracks alongside lyric videos, covers, and live recordings.
             </p>
             <p>
-              To ensure high matching fidelity, the search module applies a multi-pass ranking heuristic:
+              To pick the right track, the search module runs a multi-pass check:
             </p>
             <ul>
-              <li><strong>Pass 1:</strong> Exact match on Official Audio / Topic channel uploads.</li>
-              <li><strong>Pass 2:</strong> Levenshtein string distance thresholding on `Artist + Track Title`.</li>
-              <li><strong>Pass 3:</strong> Duration tolerance verification within ±5% of the original track duration.</li>
+              <li><strong>Pass 1:</strong> Direct match against Official Audio / Topic channel uploads.</li>
+              <li><strong>Pass 2:</strong> Levenshtein string distance on Artist and Track Title.</li>
+              <li><strong>Pass 3:</strong> Duration verification within 5% of the original track duration.</li>
             </ul>
           </section>
 
           <section class="case-section reveal" id="resilience">
-            <h2 class="case-section-title">Quota and Rate-Limiting Resilience</h2>
+            <h2 class="case-section-title">Quota and Rate Limiting</h2>
             <p>
-              The YouTube Data API enforces strict daily quota budgets (10,000 units/day, where playlist insert operations consume 50 units). The script incorporates exponential backoff, rate throttling, and idempotent checkpointing so interrupted migrations can resume without duplicating already-inserted tracks.
+              The YouTube Data API has a default daily quota of 10,000 units. Adding a song consumes 50 units. The script includes exponential backoff for rate limits and saves progress locally so that if a migration is paused or hits a limit, it can resume without creating duplicate tracks.
             </p>
           </section>
 
           <section class="case-section reveal" id="takeaways">
-            <h2 class="case-section-title">Key Takeaways and Product Thinking</h2>
+            <h2 class="case-section-title">Key Learnings</h2>
             <ul>
-              <li><strong>API Edge Cases:</strong> Real-world integration requires robust handling of rate limits, expired tokens, and catalog divergences.</li>
-              <li><strong>Data Hygiene:</strong> Upstream text normalization directly dictates downstream search accuracy in unstructured catalog indices.</li>
-              <li><strong>Graceful Degradation:</strong> Clear CLI logs and fallback unmapped-track reports ensure users remain in complete control.</li>
+              <li><strong>API Limits:</strong> Designing for rate limits and token expirations from day one prevents unexpected crashes during long transfers.</li>
+              <li><strong>Data Cleaning:</strong> Normalizing track titles before searching drastically increases match accuracy.</li>
+              <li><strong>Clear Feedback:</strong> Printing a summary of unmapped songs allows users to quickly review and add any missing tracks manually.</li>
             </ul>
           </section>
 
           <div class="case-footer-nav">
-            <a href="medical-insurance-ml.html" class="btn btn-secondary">← Previous: Medical Insurance ML</a>
-            <a href="sleep-recovery-math.html" class="btn btn-primary">Next: Sleep Recovery Math →</a>
+            <a href="medical-insurance-ml.html" class="btn btn-secondary">&larr; Previous: Medical Insurance ML</a>
+            <a href="sleep-recovery-math.html" class="btn btn-primary">Next: Sleep Recovery Math &rarr;</a>
           </div>
 
         </div>
@@ -218,7 +219,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <h2>Abinash Basa</h2>
-          <p>Mathematics, Analytics, Product Thinking, and Applied AI. Building disciplined, data-driven systems that connect technical rigor with real-world problems.</p>
+          <p>Product management, mathematics, and AI. Personal website and portfolio of Abinash Basa.</p>
         </div>
 
         <div class="footer-links-group">
