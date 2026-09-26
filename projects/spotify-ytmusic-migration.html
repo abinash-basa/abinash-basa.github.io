@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <title>Case Study: Spotify to YouTube Music Migration — Abinash Basa</title>
-  <meta name="title" content="Case Study: Spotify to YouTube Music Migration — Abinash Basa">
+  <title>Case Study: Spotify to YouTube Music Migration : Abinash Basa</title>
+  <meta name="title" content="Case Study: Spotify to YouTube Music Migration : Abinash Basa">
   <meta name="description" content="Case study on automated playlist synchronization and migration tool between Spotify and YouTube Music using Python, OAuth2, and REST APIs.">
   <meta name="author" content="Abinash Basa">
   <link rel="canonical" href="https://abinash-basa.github.io/projects/spotify-ytmusic-migration.html">
@@ -14,14 +14,16 @@
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://abinash-basa.github.io/projects/spotify-ytmusic-migration.html">
-  <meta property="og:title" content="Case Study: Spotify to YouTube Music Migration — Abinash Basa">
+  <meta property="og:title" content="Case Study: Spotify to YouTube Music Migration : Abinash Basa">
   <meta property="og:description" content="Case study on automated playlist synchronization and migration tool between Spotify and YouTube Music using Python, OAuth2, and REST APIs.">
+  <meta property="og:image" content="https://abinash-basa.github.io/assets/images/og-preview.png">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://abinash-basa.github.io/projects/spotify-ytmusic-migration.html">
-  <meta property="twitter:title" content="Case Study: Spotify to YouTube Music Migration — Abinash Basa">
-  <meta property="twitter:description" content="Case study on automated playlist synchronization and migration tool between Spotify and YouTube Music using Python, OAuth2, and REST APIs.">
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://abinash-basa.github.io/projects/spotify-ytmusic-migration.html">
+  <meta name="twitter:title" content="Case Study: Spotify to YouTube Music Migration : Abinash Basa">
+  <meta name="twitter:description" content="Case study on automated playlist synchronization and migration tool between Spotify and YouTube Music using Python, OAuth2, and REST APIs.">
+  <meta name="twitter:image" content="https://abinash-basa.github.io/assets/images/og-preview.png">
 
   <!-- Favicon -->
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -33,11 +35,24 @@
 
   <!-- Universal Stylesheets -->
   <link rel="stylesheet" href="../css/main.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Spotify to YouTube Music Migration Engine",
+  "author": {
+    "@type": "Person",
+    "name": "Abinash Basa"
+  },
+  "description": "Case study detailing automated playlist migration engine using Python, Spotify Web API, and YouTube Data API v3."
+}
+  </script>
   <link rel="stylesheet" href="../css/project-detail.css">
 </head>
 <body data-page="project-detail">
   <canvas id="cosmicCanvas" aria-hidden="true"></canvas>
 
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
   <header class="site-nav" id="siteNav">
     <div class="container nav-inner">
       <a href="../index.html" class="nav-brand" aria-label="Abinash Basa Home">
@@ -45,7 +60,7 @@
       </a>
 
       <nav aria-label="Primary Navigation">
-        <ul class="nav-menu" id="navMenu" aria-hidden="true">
+        <ul class="nav-menu" id="navMenu">
           <li><a href="../index.html" class="nav-link ">Home</a></li>
           <li><a href="../about.html" class="nav-link ">About</a></li>
           <li><a href="../projects.html" class="nav-link is-active">Projects</a></li>
@@ -66,19 +81,19 @@
     </div>
   </header>
 
-  <main>
-    <header class="case-hero">
+  <main id="mainContent">
+    <header class="case-hero" aria-labelledby="caseHeading">
       <div class="container">
         <nav class="case-breadcrumb" aria-label="Breadcrumb">
           <a href="../index.html">Home</a>
           <span>/</span>
           <a href="../projects.html">Projects</a>
           <span>/</span>
-          <span>Spotify → YT Music</span>
+          <span>Spotify to YT Music</span>
         </nav>
 
-        <span class="section-eyebrow reveal">Developer Tool &amp; Systems Integration</span>
-        <h1 class="case-title reveal">Spotify to YouTube Music Migration Engine</h1>
+        <span class="section-eyebrow reveal">Developer Tool and Systems Integration</span>
+        <h1 class="case-title reveal" id="caseHeading">Spotify to YouTube Music Migration Engine</h1>
         <p class="case-subtitle reveal">
           An automated library synchronization engine built to transfer user playlists across streaming platforms with OAuth2 multi-token flows and fuzzy track resolution heuristics.
         </p>
@@ -99,7 +114,7 @@
           </div>
           <div class="case-meta-item">
             <span class="case-meta-label">Key Challenge</span>
-            <span class="case-meta-value">Fuzzy Matching &amp; Quota Limits</span>
+            <span class="case-meta-value">Fuzzy Matching and Quota Limits</span>
           </div>
         </div>
       </div>
@@ -110,17 +125,17 @@
         
         <aside class="case-sidebar" aria-label="Case Study Sections">
           <span class="case-sidebar-title">Contents</span>
-          <a href="#overview" class="case-nav-link">Overview &amp; Problem</a>
+          <a href="#overview" class="case-nav-link">Overview and Problem</a>
           <a href="#architecture" class="case-nav-link">System Architecture</a>
           <a href="#matching" class="case-nav-link">Matching Heuristics</a>
-          <a href="#resilience" class="case-nav-link">Quota &amp; Rate Resilience</a>
+          <a href="#resilience" class="case-nav-link">Quota and Rate Resilience</a>
           <a href="#takeaways" class="case-nav-link">Key Takeaways</a>
         </aside>
 
         <div class="case-content">
           
           <section class="case-section reveal" id="overview">
-            <h2 class="case-section-title">Overview &amp; Problem Statement</h2>
+            <h2 class="case-section-title">Overview and Problem Statement</h2>
             <p>
               Users frequently maintain curated music collections on Spotify but face substantial manual friction when migrating to YouTube Music. Existing commercial tools often impose restrictive paywalls or fail to resolve subtle track metadata discrepancies (remixes, live versions, remaster tags).
             </p>
@@ -130,7 +145,7 @@
           </section>
 
           <section class="case-section reveal" id="architecture">
-            <h2 class="case-section-title">System Architecture &amp; Workflow</h2>
+            <h2 class="case-section-title">System Architecture and Workflow</h2>
             <p>
               The migration engine operates in a multi-stage sequential pipeline:
             </p>
@@ -143,7 +158,7 @@
             </div>
 
             <div class="case-callout">
-              <h4>2. Metadata Extraction &amp; Cleaning</h4>
+              <h4>2. Metadata Extraction and Cleaning</h4>
               <p>
                 Paginates through Spotify user playlists, extracting track names, primary artists, album titles, and ISRC codes while stripping clutter terms (e.g., "- 2011 Remaster", "(feat. ...)").
               </p>
@@ -173,14 +188,14 @@
           </section>
 
           <section class="case-section reveal" id="resilience">
-            <h2 class="case-section-title">Quota &amp; Rate-Limiting Resilience</h2>
+            <h2 class="case-section-title">Quota and Rate-Limiting Resilience</h2>
             <p>
               The YouTube Data API enforces strict daily quota budgets (10,000 units/day, where playlist insert operations consume 50 units). The script incorporates exponential backoff, rate throttling, and idempotent checkpointing so interrupted migrations can resume without duplicating already-inserted tracks.
             </p>
           </section>
 
           <section class="case-section reveal" id="takeaways">
-            <h2 class="case-section-title">Key Takeaways &amp; Product Thinking</h2>
+            <h2 class="case-section-title">Key Takeaways and Product Thinking</h2>
             <ul>
               <li><strong>API Edge Cases:</strong> Real-world integration requires robust handling of rate limits, expired tokens, and catalog divergences.</li>
               <li><strong>Data Hygiene:</strong> Upstream text normalization directly dictates downstream search accuracy in unstructured catalog indices.</li>
@@ -202,12 +217,12 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>Abinash Basa</h3>
-          <p>Product Management × Mathematics × AI. Building disciplined, data-driven systems at the intersection of technical depth and human needs.</p>
+          <h2>Abinash Basa</h2>
+          <p>Mathematics, Analytics, Product Thinking, and Applied AI. Building disciplined, data-driven systems that connect technical rigor with real-world problems.</p>
         </div>
 
         <div class="footer-links-group">
-          <span class="footer-links-title">Connect &amp; Follow</span>
+          <span class="footer-links-title">Connect and Profiles</span>
           <div class="footer-social-row">
             <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="footer-social-link">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="4" x2="20" y2="4"/><line x1="4" y1="9" x2="20" y2="9"/><path d="M4 14l8 6 8-6"/></svg>
@@ -239,12 +254,12 @@
 
       <div class="footer-bottom">
         <p>&copy; 2026 Abinash Basa. All rights reserved.</p>
-        <p>Built with semantic precision &amp; cosmic aesthetics.</p>
+        <p><a href="../sitemap.xml" style="color: var(--text-muted);">Sitemap</a> &bull; Hosted on GitHub Pages</p>
       </div>
     </div>
   </footer>
 
-  <script src="../js/cosmic-background.js"></script>
-  <script src="../js/main.js"></script>
+  <script src="../js/cosmic-background.js" defer></script>
+  <script src="../js/main.js" defer></script>
 </body>
 </html>

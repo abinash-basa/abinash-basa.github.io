@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <title>Case Study: Medical Insurance Cost Prediction — Abinash Basa</title>
-  <meta name="title" content="Case Study: Medical Insurance Cost Prediction — Abinash Basa">
+  <title>Case Study: Medical Insurance Cost Prediction : Abinash Basa</title>
+  <meta name="title" content="Case Study: Medical Insurance Cost Prediction : Abinash Basa">
   <meta name="description" content="Master's dissertation empirical research evaluating medical insurance cost drivers using ANOVA, linear regression, and ensemble machine learning models.">
   <meta name="author" content="Abinash Basa">
   <link rel="canonical" href="https://abinash-basa.github.io/projects/medical-insurance-ml.html">
@@ -14,14 +14,16 @@
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://abinash-basa.github.io/projects/medical-insurance-ml.html">
-  <meta property="og:title" content="Case Study: Medical Insurance Cost Prediction — Abinash Basa">
+  <meta property="og:title" content="Case Study: Medical Insurance Cost Prediction : Abinash Basa">
   <meta property="og:description" content="Master's dissertation empirical research evaluating medical insurance cost drivers using ANOVA, linear regression, and ensemble machine learning models.">
+  <meta property="og:image" content="https://abinash-basa.github.io/assets/images/og-preview.png">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://abinash-basa.github.io/projects/medical-insurance-ml.html">
-  <meta property="twitter:title" content="Case Study: Medical Insurance Cost Prediction — Abinash Basa">
-  <meta property="twitter:description" content="Master's dissertation empirical research evaluating medical insurance cost drivers using ANOVA, linear regression, and ensemble machine learning models.">
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://abinash-basa.github.io/projects/medical-insurance-ml.html">
+  <meta name="twitter:title" content="Case Study: Medical Insurance Cost Prediction : Abinash Basa">
+  <meta name="twitter:description" content="Master's dissertation empirical research evaluating medical insurance cost drivers using ANOVA, linear regression, and ensemble machine learning models.">
+  <meta name="twitter:image" content="https://abinash-basa.github.io/assets/images/og-preview.png">
 
   <!-- Favicon -->
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -33,11 +35,24 @@
 
   <!-- Universal Stylesheets -->
   <link rel="stylesheet" href="../css/main.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Statistical and Machine Learning Approaches for Medical Insurance Cost Prediction",
+  "author": {
+    "@type": "Person",
+    "name": "Abinash Basa"
+  },
+  "description": "Master's dissertation empirical research evaluating medical insurance cost drivers using ANOVA, linear regression, and ensemble machine learning models."
+}
+  </script>
   <link rel="stylesheet" href="../css/project-detail.css">
 </head>
 <body data-page="project-detail">
   <canvas id="cosmicCanvas" aria-hidden="true"></canvas>
 
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
   <header class="site-nav" id="siteNav">
     <div class="container nav-inner">
       <a href="../index.html" class="nav-brand" aria-label="Abinash Basa Home">
@@ -45,7 +60,7 @@
       </a>
 
       <nav aria-label="Primary Navigation">
-        <ul class="nav-menu" id="navMenu" aria-hidden="true">
+        <ul class="nav-menu" id="navMenu">
           <li><a href="../index.html" class="nav-link ">Home</a></li>
           <li><a href="../about.html" class="nav-link ">About</a></li>
           <li><a href="../projects.html" class="nav-link is-active">Projects</a></li>
@@ -66,8 +81,8 @@
     </div>
   </header>
 
-  <main>
-    <header class="case-hero">
+  <main id="mainContent">
+    <header class="case-hero" aria-labelledby="caseHeading">
       <div class="container">
         <nav class="case-breadcrumb" aria-label="Breadcrumb">
           <a href="../index.html">Home</a>
@@ -78,7 +93,7 @@
         </nav>
 
         <span class="section-eyebrow reveal">Master's Dissertation • Lovely Professional University</span>
-        <h1 class="case-title reveal">Statistical &amp; ML Approaches for Medical Insurance Cost Prediction</h1>
+        <h1 class="case-title reveal" id="caseHeading">Statistical and ML Approaches for Medical Insurance Cost Prediction</h1>
         <p class="case-subtitle reveal">
           An empirical investigation comparing classical inferential statistics with modern tree-based ensemble algorithms to analyze healthcare cost drivers and optimize predictive accuracy.
         </p>
@@ -87,7 +102,7 @@
         <div class="case-meta-grid reveal">
           <div class="case-meta-item">
             <span class="case-meta-label">Domain</span>
-            <span class="case-meta-value">Healthcare Analytics &amp; ML</span>
+            <span class="case-meta-value">Healthcare Analytics and ML</span>
           </div>
           <div class="case-meta-item">
             <span class="case-meta-label">Top Model Performance</span>
@@ -120,7 +135,7 @@
         <div class="case-content">
           
           <section class="case-section reveal" id="problem">
-            <h2 class="case-section-title">Research Problem &amp; Objectives</h2>
+            <h2 class="case-section-title">Research Problem and Objectives</h2>
             <p>
               Individual healthcare expenditures exhibit severe variance driven by non-linear interactions among demographic, behavioral, and clinical attributes. While classical statistical models offer transparent hypothesis testing, they often underfit complex interaction effects.
             </p>
@@ -134,7 +149,7 @@
           </section>
 
           <section class="case-section reveal" id="methodology">
-            <h2 class="case-section-title">Statistical Testing &amp; Variable Architecture</h2>
+            <h2 class="case-section-title">Statistical Testing and Variable Architecture</h2>
             <p>
               The study utilized the Medical Cost Personal Dataset (1,338 records, 7 variables: age, sex, bmi, children, smoker, region, and charges).
             </p>
@@ -148,7 +163,7 @@
           </section>
 
           <section class="case-section reveal" id="models">
-            <h2 class="case-section-title">Model Benchmark &amp; Results</h2>
+            <h2 class="case-section-title">Model Benchmark and Results</h2>
             <p>
               Five supervised algorithms were evaluated using 80/20 train-test splits on standardized metrics (Coefficient of Determination R², Root Mean Squared Error RMSE, and Mean Absolute Error MAE):
             </p>
@@ -178,7 +193,7 @@
           </section>
 
           <section class="case-section reveal" id="findings">
-            <h2 class="case-section-title">Product &amp; Actuarial Implications</h2>
+            <h2 class="case-section-title">Product and Actuarial Implications</h2>
             <p>
               From a product management and health-tech underwriting perspective, pure linear scoring tables materially under-price risk for high-BMI smokers. Incorporating non-linear boosting ensembles into underwriting tools enables actuarial teams to tailor risk-adjusted policy pricing while identifying high-risk cohorts for preventive wellness interventions.
             </p>
@@ -212,12 +227,12 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>Abinash Basa</h3>
-          <p>Product Management × Mathematics × AI. Building disciplined, data-driven systems at the intersection of technical depth and human needs.</p>
+          <h2>Abinash Basa</h2>
+          <p>Mathematics, Analytics, Product Thinking, and Applied AI. Building disciplined, data-driven systems that connect technical rigor with real-world problems.</p>
         </div>
 
         <div class="footer-links-group">
-          <span class="footer-links-title">Connect &amp; Follow</span>
+          <span class="footer-links-title">Connect and Profiles</span>
           <div class="footer-social-row">
             <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="footer-social-link">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="4" x2="20" y2="4"/><line x1="4" y1="9" x2="20" y2="9"/><path d="M4 14l8 6 8-6"/></svg>
@@ -249,12 +264,12 @@
 
       <div class="footer-bottom">
         <p>&copy; 2026 Abinash Basa. All rights reserved.</p>
-        <p>Built with semantic precision &amp; cosmic aesthetics.</p>
+        <p><a href="../sitemap.xml" style="color: var(--text-muted);">Sitemap</a> &bull; Hosted on GitHub Pages</p>
       </div>
     </div>
   </footer>
 
-  <script src="../js/cosmic-background.js"></script>
-  <script src="../js/main.js"></script>
+  <script src="../js/cosmic-background.js" defer></script>
+  <script src="../js/main.js" defer></script>
 </body>
 </html>

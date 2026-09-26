@@ -1,6 +1,6 @@
 /**
  * Universal Cosmic Background System
- * Abinash Basa Portfolio — abinash-basa.github.io
+ * Abinash Basa Portfolio - abinash-basa.github.io
  * 
  * Provides an elegant, lightweight, interactive starfield with mathematical curves
  * and subtle atmospheric depth across all pages.

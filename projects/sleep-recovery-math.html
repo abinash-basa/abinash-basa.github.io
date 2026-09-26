@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <title>Case Study: Sleep Recovery Mathematical Modelling — Abinash Basa</title>
-  <meta name="title" content="Case Study: Sleep Recovery Mathematical Modelling — Abinash Basa">
+  <title>Case Study: Sleep Recovery Mathematical Modelling : Abinash Basa</title>
+  <meta name="title" content="Case Study: Sleep Recovery Mathematical Modelling : Abinash Basa">
   <meta name="description" content="Mathematical research paper analyzing cognitive recovery dynamics following sleep debt using ordinary differential equations and Euler's numerical simulation.">
   <meta name="author" content="Abinash Basa">
   <link rel="canonical" href="https://abinash-basa.github.io/projects/sleep-recovery-math.html">
@@ -14,14 +14,16 @@
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://abinash-basa.github.io/projects/sleep-recovery-math.html">
-  <meta property="og:title" content="Case Study: Sleep Recovery Mathematical Modelling — Abinash Basa">
+  <meta property="og:title" content="Case Study: Sleep Recovery Mathematical Modelling : Abinash Basa">
   <meta property="og:description" content="Mathematical research paper analyzing cognitive recovery dynamics following sleep debt using ordinary differential equations and Euler's numerical simulation.">
+  <meta property="og:image" content="https://abinash-basa.github.io/assets/images/og-preview.png">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://abinash-basa.github.io/projects/sleep-recovery-math.html">
-  <meta property="twitter:title" content="Case Study: Sleep Recovery Mathematical Modelling — Abinash Basa">
-  <meta property="twitter:description" content="Mathematical research paper analyzing cognitive recovery dynamics following sleep debt using ordinary differential equations and Euler's numerical simulation.">
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://abinash-basa.github.io/projects/sleep-recovery-math.html">
+  <meta name="twitter:title" content="Case Study: Sleep Recovery Mathematical Modelling : Abinash Basa">
+  <meta name="twitter:description" content="Mathematical research paper analyzing cognitive recovery dynamics following sleep debt using ordinary differential equations and Euler's numerical simulation.">
+  <meta name="twitter:image" content="https://abinash-basa.github.io/assets/images/og-preview.png">
 
   <!-- Favicon -->
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -33,11 +35,24 @@
 
   <!-- Universal Stylesheets -->
   <link rel="stylesheet" href="../css/main.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Mathematical Modeling of Sleep Quality and Recovery Dynamics",
+  "author": {
+    "@type": "Person",
+    "name": "Abinash Basa"
+  },
+  "description": "Mathematical research paper analyzing cognitive recovery dynamics following sleep debt using ordinary differential equations and Euler's numerical simulation."
+}
+  </script>
   <link rel="stylesheet" href="../css/project-detail.css">
 </head>
 <body data-page="project-detail">
   <canvas id="cosmicCanvas" aria-hidden="true"></canvas>
 
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
   <header class="site-nav" id="siteNav">
     <div class="container nav-inner">
       <a href="../index.html" class="nav-brand" aria-label="Abinash Basa Home">
@@ -45,7 +60,7 @@
       </a>
 
       <nav aria-label="Primary Navigation">
-        <ul class="nav-menu" id="navMenu" aria-hidden="true">
+        <ul class="nav-menu" id="navMenu">
           <li><a href="../index.html" class="nav-link ">Home</a></li>
           <li><a href="../about.html" class="nav-link ">About</a></li>
           <li><a href="../projects.html" class="nav-link is-active">Projects</a></li>
@@ -66,8 +81,8 @@
     </div>
   </header>
 
-  <main>
-    <header class="case-hero">
+  <main id="mainContent">
+    <header class="case-hero" aria-labelledby="caseHeading">
       <div class="container">
         <nav class="case-breadcrumb" aria-label="Breadcrumb">
           <a href="../index.html">Home</a>
@@ -78,7 +93,7 @@
         </nav>
 
         <span class="section-eyebrow reveal">Academic Term Paper • Lovely Professional University</span>
-        <h1 class="case-title reveal">Mathematical Modeling of Sleep Quality &amp; Recovery Rate Dynamics</h1>
+        <h1 class="case-title reveal" id="caseHeading">Mathematical Modeling of Sleep Quality and Recovery Rate Dynamics</h1>
         <p class="case-subtitle reveal">
           Formulating and solving differential equation systems to model cognitive restoration and sleep debt recovery trajectories across varying physiological parameters.
         </p>
@@ -87,7 +102,7 @@
         <div class="case-meta-grid reveal">
           <div class="case-meta-item">
             <span class="case-meta-label">Domain</span>
-            <span class="case-meta-value">Applied Mathematics &amp; Biomathematics</span>
+            <span class="case-meta-value">Applied Mathematics and Biomathematics</span>
           </div>
           <div class="case-meta-item">
             <span class="case-meta-label">Mathematical Core</span>
@@ -110,7 +125,7 @@
         
         <aside class="case-sidebar" aria-label="Case Study Sections">
           <span class="case-sidebar-title">Contents</span>
-          <a href="#abstract" class="case-nav-link">Abstract &amp; Context</a>
+          <a href="#abstract" class="case-nav-link">Abstract and Context</a>
           <a href="#formulation" class="case-nav-link">Mathematical Formulation</a>
           <a href="#simulation" class="case-nav-link">Numerical Simulations</a>
           <a href="#insights" class="case-nav-link">Cognitive Insights</a>
@@ -120,7 +135,7 @@
         <div class="case-content">
           
           <section class="case-section reveal" id="abstract">
-            <h2 class="case-section-title">Abstract &amp; Problem Context</h2>
+            <h2 class="case-section-title">Abstract and Problem Context</h2>
             <p>
               Sleep debt recovery is not a linear function of elapsed sleep time. Instead, the rate of restorative biochemical and cognitive restoration exhibits non-linear saturation characteristics dependent on cumulative sleep deficit, circadian phase, and recovery rate constants.
             </p>
@@ -130,22 +145,22 @@
           </section>
 
           <section class="case-section reveal" id="formulation">
-            <h2 class="case-section-title">Mathematical Formulation &amp; ODE Models</h2>
+            <h2 class="case-section-title">Mathematical Formulation and ODE Models</h2>
             <p>
-              The core dynamics were modeled using first-order differential equations representing the rate of change of cognitive deficit $D(t)$ with respect to continuous recovery time $t$:
+              The core dynamics were modeled using first-order differential equations representing the rate of change of cognitive deficit D(t) with respect to continuous recovery time t:
             </p>
             
             <div class="case-callout">
               <h4>Exponential Decay Model</h4>
               <p>
-                $$\frac{dD}{dt} = -\lambda D(t) + S(t)$$
-                Where $\lambda$ denotes the recovery rate coefficient and $S(t)$ captures circadian stimulus effects. Analytical solutions demonstrate exponential decay of sleep debt during continuous sleep bouts.
+                dD/dt = -&lambda; D(t) + S(t)<br>
+                Where &lambda; denotes the recovery rate coefficient and S(t) captures circadian stimulus effects. Analytical solutions demonstrate exponential decay of sleep debt during continuous sleep bouts.
               </p>
             </div>
           </section>
 
           <section class="case-section reveal" id="simulation">
-            <h2 class="case-section-title">Numerical Simulation &amp; Euler's Method</h2>
+            <h2 class="case-section-title">Numerical Simulation and Euler's Method</h2>
             <p>
               To evaluate trajectories under discrete, fragmented sleep schedules, the differential system was solved numerically using Euler's method across multiple parameter variations.
             </p>
@@ -155,7 +170,7 @@
           </section>
 
           <section class="case-section reveal" id="insights">
-            <h2 class="case-section-title">Key Insights &amp; Applications</h2>
+            <h2 class="case-section-title">Key Insights and Applications</h2>
             <ul>
               <li><strong>Non-Linear Restoration:</strong> Early sleep cycles achieve the highest rate of cognitive debt clearance per unit time.</li>
               <li><strong>Mathematical Grounding:</strong> Demonstrates how formal differential equations bridge abstract mathematical theory and human biological systems.</li>
@@ -190,12 +205,12 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>Abinash Basa</h3>
-          <p>Product Management × Mathematics × AI. Building disciplined, data-driven systems at the intersection of technical depth and human needs.</p>
+          <h2>Abinash Basa</h2>
+          <p>Mathematics, Analytics, Product Thinking, and Applied AI. Building disciplined, data-driven systems that connect technical rigor with real-world problems.</p>
         </div>
 
         <div class="footer-links-group">
-          <span class="footer-links-title">Connect &amp; Follow</span>
+          <span class="footer-links-title">Connect and Profiles</span>
           <div class="footer-social-row">
             <a href="https://substack.com/@abinashbasa" target="_blank" rel="noopener noreferrer" class="footer-social-link">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="4" x2="20" y2="4"/><line x1="4" y1="9" x2="20" y2="9"/><path d="M4 14l8 6 8-6"/></svg>
@@ -227,12 +242,12 @@
 
       <div class="footer-bottom">
         <p>&copy; 2026 Abinash Basa. All rights reserved.</p>
-        <p>Built with semantic precision &amp; cosmic aesthetics.</p>
+        <p><a href="../sitemap.xml" style="color: var(--text-muted);">Sitemap</a> &bull; Hosted on GitHub Pages</p>
       </div>
     </div>
   </footer>
 
-  <script src="../js/cosmic-background.js"></script>
-  <script src="../js/main.js"></script>
+  <script src="../js/cosmic-background.js" defer></script>
+  <script src="../js/main.js" defer></script>
 </body>
 </html>

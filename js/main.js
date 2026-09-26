@@ -1,7 +1,9 @@
 /**
  * Shared Site-Wide Interactions
- * Abinash Basa Portfolio — abinash-basa.github.io
+ * Abinash Basa Portfolio - abinash-basa.github.io
  */
+
+document.documentElement.classList.add('js-enabled');
 
 document.addEventListener('DOMContentLoaded', () => {
   /* -------------------------------------------------------------------------- */
@@ -62,26 +64,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('navMenu');
 
   if (hamburger && navMenu) {
-    const toggleMenu = (open) => {
-      const isOpen = open !== undefined ? open : !navMenu.classList.contains('is-open');
+    const updateMenuState = (isOpen) => {
       hamburger.classList.toggle('is-active', isOpen);
       navMenu.classList.toggle('is-open', isOpen);
       hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      navMenu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+      if (window.innerWidth < 768) {
+        navMenu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+      } else {
+        navMenu.removeAttribute('aria-hidden');
+      }
       document.body.classList.toggle('menu-open', isOpen);
     };
 
-    hamburger.addEventListener('click', () => toggleMenu());
+    hamburger.addEventListener('click', () => {
+      const currentlyOpen = navMenu.classList.contains('is-open');
+      updateMenuState(!currentlyOpen);
+    });
 
     // Close when clicking nav links
     navMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => toggleMenu(false));
+      link.addEventListener('click', () => updateMenuState(false));
     });
 
     // Close on Escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && navMenu.classList.contains('is-open')) {
-        toggleMenu(false);
+        updateMenuState(false);
         hamburger.focus();
       }
     });
@@ -89,16 +97,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Close when clicking outside
     document.addEventListener('click', (e) => {
       if (navMenu.classList.contains('is-open') && !siteNav.contains(e.target)) {
-        toggleMenu(false);
+        updateMenuState(false);
       }
     });
+
+    // Initial check on resize
+    const handleNavResize = () => {
+      if (window.innerWidth >= 768) {
+        navMenu.removeAttribute('aria-hidden');
+        document.body.classList.remove('menu-open');
+      } else if (!navMenu.classList.contains('is-open')) {
+        navMenu.setAttribute('aria-hidden', 'true');
+      }
+    };
+    window.addEventListener('resize', handleNavResize, { passive: true });
+    handleNavResize();
   }
 
   /* -------------------------------------------------------------------------- */
   /* 4. IntersectionObserver Scroll Reveal                                     */
   /* -------------------------------------------------------------------------- */
   const revealElements = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!prefersReducedMotion && 'IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -107,8 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, {
-      threshold: 0.08,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.06,
+      rootMargin: '0px 0px -30px 0px'
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
@@ -128,9 +150,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const filter = btn.getAttribute('data-filter');
         filterButtons.forEach(b => {
           b.classList.remove('is-active');
+          b.setAttribute('aria-selected', 'false');
           b.setAttribute('aria-pressed', 'false');
         });
         btn.classList.add('is-active');
+        btn.setAttribute('aria-selected', 'true');
         btn.setAttribute('aria-pressed', 'true');
 
         projectCards.forEach(card => {
@@ -158,11 +182,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const email = 'abinashbasa15@gmail.com';
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(email).then(() => {
-          const originalText = btn.innerHTML;
-          btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Copied to clipboard!';
+          const originalHTML = btn.innerHTML;
+          btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Copied to clipboard!';
           btn.classList.add('is-copied');
           setTimeout(() => {
-            btn.innerHTML = originalText;
+            btn.innerHTML = originalHTML;
             btn.classList.remove('is-copied');
           }, 2500);
         });
