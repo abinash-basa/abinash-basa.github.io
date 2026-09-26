@@ -62,9 +62,9 @@ def clean_text(text):
     # Remove HTML tags
     text = re.sub(r"<[^>]+>", " ", text)
     # Normalize unicode em-dashes and en-dashes per project rules (no em dashes)
-    text = text.replace("—", " - ").replace("–", " - ")
+    text = text.replace("\u2014", " - ").replace("\u2013", " - ")
     # Normalize curly quotes and apostrophes
-    text = text.replace("“", '"').replace("”", '"').replace("‘", "'").replace("’", "'")
+    text = text.replace("\u201c", '"').replace("\u201d", '"').replace("\u2018", "'").replace("\u2019", "'")
     # Collapse multiple whitespace within lines
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n\s*\n+", "\n\n", text)

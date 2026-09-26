@@ -10,7 +10,7 @@ Live Site: [https://abinash-basa.github.io](https://abinash-basa.github.io)
 - B.Sc. in Mathematics, MPC Autonomous College (2021 - 2024)
 
 ## Projects Included
-- **BASA Academies:** Business operations and training programs for AI and digital literacy in Odisha.
+- **BASA Academies:** Education and digital transformation business delivering practical skills training and organizational adoption in Odisha.
 - **Medical Insurance ML:** M.Sc. dissertation evaluating ANOVA, linear regression, and Gradient Boosting (R² = 0.878) on medical cost prediction.
 - **Spotify to YouTube Music Migration:** Python tool using OAuth 2.0 and fuzzy search matching to sync playlists between music platforms.
 - **Sleep Recovery Math:** Term paper modeling cognitive recovery with ordinary differential equations and Euler numerical simulations.
